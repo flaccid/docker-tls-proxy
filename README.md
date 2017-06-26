@@ -6,8 +6,7 @@
 ![GitHub Forks][github-forks]
 ![Docker Build][docker-build]
 ![Docker Build][docker-build-status]
-[![Docker Pulls][docker-pulls]]
-![Docker Pulls][docker-pulls]
+[![Docker Pulls][pulls-badge]]
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/flaccid/docker-tls-proxy.svg?style=social)](https://twitter.com/intent/tweet?text=check%20out%20https://goo.gl/KS5vis&url=%5Bobject%20Object%5D)
 
 A simple reverse proxy using NGINX in Docker for terminating TLS/SSL.
@@ -75,4 +74,4 @@ limitations under the License.
 [github-stars]: https://img.shields.io/github/stars/flaccid/docker-tls-proxy.svg
 [docker-build]: https://img.shields.io/docker/automated/flaccid/tls-proxy.svg
 [docker-build-status]: https://img.shields.io/docker/build/flaccid/tls-proxy.svg
-[docker-pulls]: https://img.shields.io/docker/pulls/flaccid/tls-proxy.svg
+[pulls-badge]: https://img.shields.io/docker/pulls/flaccid/tls-proxy.svg
