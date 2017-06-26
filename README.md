@@ -47,7 +47,7 @@ There should be a reasonable amount of flexibility using the available variables
 - `ENABLE_WEBSOCKET` - enable WebSocket support i.e. `ws[s]://` (default is `false`)
 - `ENABLE_HTTP2` - enable HTTP/2 support (default is `false`)
 
-### Push to DockerHub
+### Push to Docker Hub
 
     $ docker push flaccid/tls-proxy
 
