@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+: "${SELF_SIGNED_SUBJECT:=/C=AQ/ST=Antarctica/L=McMurdo Station/O=The Penguin Resistance/OU=Fish Department/CN=localhost}"
+
 # create a self-signed certificate if needed
 if [ "$SELF_SIGNED" = 'true' ]; then
   if [ ! -e /etc/nginx/cert.pem ]; then
@@ -9,7 +11,7 @@ if [ "$SELF_SIGNED" = 'true' ]; then
       -days 365 \
       -keyout /etc/nginx/key.pem \
       -out /etc/nginx/cert.pem \
-      -subj "/C=AQ/ST=Antarctica/L=McMurdo Station/O=The Penguin Resistance/OU=Fish Department/CN=localhost"
+      -subj "$SELF_SIGNED_SUBJECT"
   fi
 else
   if ([ -z "$TLS_CERTIFICATE" ] || [ -z "$TLS_KEY" ]); then
