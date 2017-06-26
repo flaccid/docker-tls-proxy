@@ -40,6 +40,7 @@ There should be a reasonable amount of flexibility using the available variables
 - `SELF_SIGNED` - generate and use a self-signed certificate (`true` or `false`, default is `false`)
 - `SELF_SIGNED_SUBJECT` - the subject DN (distinguished name) for the generated self-signed certificate
 - `FORCE_HTTPS` - force (redirect plain HTTP requests) HTTPs (`true` or `false`, default is `false`)
+- `SERVER_NAME` - the server name to listen with (default is `_` which is any host name)
 - `LISTEN_PORT` - listen port for the NGINX SSL port (default is `443`)
 - `UPSTREAM_HOST` - the hostname or IP to reverse proxy to (default is `localhost`)
 - `UPSTREAM_PORT` - the upstream host's port (default is `80`)

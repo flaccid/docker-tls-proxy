@@ -9,6 +9,7 @@ ENV SELF_SIGNED false
 ENV FORCE_HTTPS false
 ENV ENABLE_WEBSOCKET false
 ENV ENABLE_HTTP2 false
+ENV SERVER_NAME _
 
 RUN apk update && \
   apk add --no-cache --upgrade nginx openssl && \
