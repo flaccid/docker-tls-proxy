@@ -4,9 +4,9 @@
 [![GitHub Issues][badge-gh-issues]][gh-issues]
 [![GitHub Stars][badge-gh-stars]][gh-stars]
 [![GitHub Forks][badge-gh-forks]][gh-forks]
-![Docker Build][badge-docker-build]
+[![Docker Build][badge-docker-build]][docker-builds]
 [![Docker Build Status][badge-docker-build-status]][docker-builds]
-![Docker Pulls][badge-docker-pulls]
+[![Docker Pulls][badge-docker-pulls]][docker-hub]
 [![Twitter][badge-twitter]][tweet]
 
 A simple reverse proxy using NGINX in Docker for terminating TLS/SSL.
