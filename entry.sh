@@ -28,9 +28,9 @@ openssl x509 -in /etc/nginx/cert.pem -text -noout
 
 # nginx re-configuration
 echo '> reconfigure nginx'
-[ "$ENABLE_SPDY" = 'true' ] && spdy=' spdy'
+[ "$ENABLE_HTTP2" = 'true' ] && http2=' http2'
 sed -i "s/server localhost:80/server $UPSTREAM_HOST:$UPSTREAM_PORT/" /etc/nginx/conf.d/02-https.conf
-sed -i "s/listen 443 ssl/listen $LISTEN_PORT ssl$spdy/" /etc/nginx/conf.d/02-https.conf
+sed -i "s/listen 443 ssl/listen $LISTEN_PORT ssl$http2/" /etc/nginx/conf.d/02-https.conf
 
 if [ "$FORCE_HTTPS" = 'true' ]; then
   echo '>> force https'
@@ -43,7 +43,7 @@ server {
 EOF
 fi
 
-if [ "$WEBSOCKET_SUPPORT" = 'true' ]; then
+if [ "$ENABLE_WEBSOCKET" = 'true' ]; then
   echo '>> websocket support on'
   cat <<'EOF'> /etc/nginx/conf.d/websocket.conf
 map $http_upgrade $connection_upgrade {

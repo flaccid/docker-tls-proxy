@@ -26,9 +26,10 @@ docker run \
   -itd \
   -e UPSTREAM_HOST=icanhazip.com \
   -e FORCE_HTTPS=true \
-  -e WEBSOCKET_SUPPORT=true \
-  -p 8877:80 \
-  -p 8878:443 \
+  -e ENABLE_HTTP2=true \
+  -e ENABLE_WEBSOCKET=true \
+  -p 80:80 \
+  -p 443:443 \
     flaccid/tls-proxy
 ```
 
@@ -42,8 +43,8 @@ There should be a reasonable amount of flexibility using the available variables
 - `LISTEN_PORT` - listen port for the NGINX SSL port (default is `443`)
 - `UPSTREAM_HOST` - the hostname or IP to reverse proxy to (default is `localhost`)
 - `UPSTREAM_PORT` - the upstream host's port (default is `80`)
-- `WEBSOCKET_SUPPORT` - enable websocket support (default is `false`)
-- `ENABLE_SPDY` - enable SPDY support (default is `false`)
+- `ENABLE_WEBSOCKET` - enable WebSocket support i.e. `ws[s]://` (default is `false`)
+- `ENABLE_HTTP2` - enable HTTP/2 support (default is `false`)
 
 ### Push to DockerHub
 
