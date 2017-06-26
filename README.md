@@ -1,13 +1,13 @@
 # docker-tls-proxy
 
-![License][license]
-![GitHub Issues][github-issues]
-![GitHub Stars][github-stars]
-![GitHub Forks][github-forks]
-![Docker Build][docker-build]
-![Docker Build][docker-build-status]
-[![Docker Pulls][pulls-badge]]
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/flaccid/docker-tls-proxy.svg?style=social)](https://twitter.com/intent/tweet?text=check%20out%20https://goo.gl/KS5vis&url=%5Bobject%20Object%5D)
+[![License][badge-license]][apache2]
+[![GitHub Issues][badge-gh-issues]][gh-issues]
+[![GitHub Stars][badge-gh-stars]][gh-stars]
+[![GitHub Forks][badge-gh-forks]][gh-forks]
+![Docker Build][badge-docker-build]
+[![Docker Build Status][badge-docker-build-status]][docker-builds]
+![Docker Pulls][badge-docker-pulls]
+[![Twitter][badge-twitter]][tweet]
 
 A simple reverse proxy using NGINX in Docker for terminating TLS/SSL.
 
@@ -68,10 +68,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[license]: https://img.shields.io/badge/license-Apache%202-blue.svg
-[github-issues]: https://img.shields.io/github/issues/flaccid/docker-tls-proxy.svg
-[github-forks]: https://img.shields.io/github/forks/flaccid/docker-tls-proxy.svg
-[github-stars]: https://img.shields.io/github/stars/flaccid/docker-tls-proxy.svg
-[docker-build]: https://img.shields.io/docker/automated/flaccid/tls-proxy.svg
-[docker-build-status]: https://img.shields.io/docker/build/flaccid/tls-proxy.svg
-[pulls-badge]: https://img.shields.io/docker/pulls/flaccid/tls-proxy.svg
+[badge-license]: https://img.shields.io/badge/license-Apache%202-blue.svg
+[badge-gh-issues]: https://img.shields.io/github/issues/flaccid/docker-tls-proxy.svg
+[badge-gh-forks]: https://img.shields.io/github/forks/flaccid/docker-tls-proxy.svg
+[badge-gh-stars]: https://img.shields.io/github/stars/flaccid/docker-tls-proxy.svg
+[badge-docker-build]: https://img.shields.io/docker/automated/flaccid/tls-proxy.svg
+[badge-docker-build-status]: https://img.shields.io/docker/build/flaccid/tls-proxy.svg
+[badge-docker-pulls]: https://img.shields.io/docker/pulls/flaccid/tls-proxy.svg
+[badge-twitter]: https://img.shields.io/twitter/url/https/github.com/flaccid/docker-tls-proxy.svg?style=social
+[gh-issues]: https://github.com/flaccid/docker-tls-proxy/issues
+[gh-stars]: https://github.com/flaccid/docker-tls-proxy/stargazers
+[gh-forks]: https://github.com/flaccid/docker-tls-proxy/network
+[docker-builds]: https://hub.docker.com/r/flaccid/tls-proxy/builds/
+[docker-hub]: https://registry.hub.docker.com/u/flaccid/tls-proxy/
+[apache2]: https://www.apache.org/licenses/LICENSE-2.0
+[tweet]: https://twitter.com/intent/tweet?text=check%20out%20https://goo.gl/KS5vis&url=%5Bobject%20Object%5D
