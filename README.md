@@ -37,6 +37,8 @@ docker run \
 
 There should be a reasonable amount of flexibility using the available variables. If not please raise an issue so your use case can be covered!
 
+- `TLS_CERTIFICATE` - the TLS/SSL certificate (x509), with chain if needed
+- `TLS_KEY` - the TLS/SSL key (x509)
 - `SELF_SIGNED` - generate and use a self-signed certificate (`true` or `false`, default is `false`)
 - `SELF_SIGNED_SUBJECT` - the subject DN (distinguished name) for the generated self-signed certificate
 - `FORCE_HTTPS` - force (redirect plain HTTP requests) HTTPs (`true` or `false`, default is `false`)
