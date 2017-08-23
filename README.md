@@ -28,6 +28,7 @@ docker run \
   -e FORCE_HTTPS=true \
   -e ENABLE_HTTP2=true \
   -e ENABLE_WEBSOCKET=true \
+  -e SELF_SIGNED=true \
   -p 80:80 \
   -p 443:443 \
     flaccid/tls-proxy
